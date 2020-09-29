@@ -6,3 +6,43 @@ html{
     max-width: 100%; /* -> Las imagenes son responsivas a su contenedor*/
     width: 15rem;
 }
+
+.list-group-card{
+    padding: 0 0 0 0;
+}
+
+.list-group-item{
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+}
+
+.store-header{
+    background-image: url(../img/header-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 1vh;
+    min-height: 18rem;
+    margin-bottom: 3rem;
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header-content > h1{
+    margin-top: 0;
+    color: azure;
+    font-weight: 700;
+    font-size: 8rem;
+}
+
+.header-content > h2{
+    font-weight: 500;
+    color: azure;
+    font-size: 3rem;
+}

@@ -1,0 +1,39 @@
+<div class="form-group form-row">
+    <div>
+        <label for="bookTitle"> Buscar: </label>
+        <input id="bookTitle" type="text" ng-model="books.titulo" class="form-control"
+            placeholder="Ingresa el nombre del libro" />
+    </div>
+
+    <div>
+        <label for="bookEditorial">Ordenar: </label>
+        <select class="custom-select form-control" id="bookEditorial" ng-model="books.editorial">
+            <option value="">Buscar por editorial</option>
+            <option value="Ediciones B / Zeta">Ediciones B / Zeta </option>
+            <option value="Gigamesh">Gigamesh</option>
+            <option value="Edhasa">Edhasa</option>
+        </select>
+    </div>
+</div>
+
+<section>
+    <ul class="list-group-card">
+        <li class="row list-group-item" ng-repeat="book in Products.books | filter: books">
+            <!--El filtro (books) va acceder a la variable del scope, en este caso products.books-->
+            <!--Por lo que el books tiene los parametros del arreglo de libros, books.titulo, books.editorial, etc.-->
+            <div class="col-md-2">
+                <!-- Grilla de la pagina web ,  tiene 12 elementos en total-->
+                <img class="thumbnail book-img" ng-src="{{book.img}}" alt="">
+            </div>
+            <div class="col-md-10">
+                <a ng-click="" ng-href="#">
+                    <h3>{{book.titulo}}</h3>
+                </a>
+
+                <h4>{{book.editorial}}</h4>
+                <p>{{book.descripcion}}</p>
+            </div>
+
+        </li>
+    </ul>
+</section>

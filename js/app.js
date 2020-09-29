@@ -1,5 +1,5 @@
 (function () {
-    let app = angular.module('bookStoreApp', [])
+    let app = angular.module('bookStoreApp', ['store-books'])
 
     app.controller('ProductsController', ['$http', function($http){
         let products = this // Una variable books va a manejar el Scope del controlador
