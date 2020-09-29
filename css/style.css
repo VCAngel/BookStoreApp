@@ -1,0 +1,8 @@
+html{
+    font-size: 62.5%; /*!!! Reset para REMS =>> 62.5% de 16px= 10px* !!!*/
+}
+
+.book-img{
+    max-width: 100%; /* -> Las imagenes son responsivas a su contenedor*/
+    width: 15rem;
+}
