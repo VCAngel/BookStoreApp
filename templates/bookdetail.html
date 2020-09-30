@@ -1,3 +1,28 @@
 <section>
-    
+    <a ng-click="" ui-sref="/">
+        <button type="button" class="btn btn-success btn-lg">Regresar</button>
+    </a>
+
+    <ul class="list-group-card">
+        <li class="row list-group-item" ng-hide="!Products.isBookVisible($index)"
+            ng-repeat="book in Products.books | filter: books">
+            <!--El filtro (books) va acceder a la variable del scope, en este caso products.books-->
+            <!--Por lo que el books tiene los parametros del arreglo de libros, books.titulo, books.editorial, etc.-->
+            <div class="col-md-2">
+                <!-- Grilla de la pagina web ,  tiene 12 elementos en total-->
+                <a href="#">
+                    <img class="thumbnail book-img" ng-src="{{book.img}}" alt="">
+                </a>
+            </div>
+            <div class="col-md-10">
+                    <!--Acceder al index del elemento del ngrepeat para poder hacer referencia a él con el ui-router-->
+                    <h3>{{book.titulo}}</h3>
+
+                <h4>{{book.editorial}}</h4>
+                <p>{{book.descripcion}}</p>
+            </div>
+
+        </li>
+
+    </ul>
 </section>

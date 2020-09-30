@@ -2,6 +2,16 @@ html{
     font-size: 62.5%; /*!!! Reset para REMS =>> 62.5% de 16px= 10px* !!!*/
 }
 
+.hideBook{
+    display: none !important;
+}
+
+.top-bar{
+    content: '';
+    background-color: blue;
+    min-height: 5rem;
+}
+
 .book-img{
     max-width: 100%; /* -> Las imagenes son responsivas a su contenedor*/
     width: 15rem;
@@ -34,14 +44,14 @@ html{
     font-family: 'Times New Roman', Times, serif;
 }
 
-.header-content > h1{
+.header-content h1{
     margin-top: 0;
     color: azure;
     font-weight: 700;
     font-size: 8rem;
 }
 
-.header-content > h2{
+.header-content h2{
     font-weight: 500;
     color: azure;
     font-size: 3rem;

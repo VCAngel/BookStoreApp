@@ -1,6 +1,6 @@
 [
     {
-        "id": "1",
+        "id": "0",
         "titulo": "El Juego de Ender",
         "autor": "Orson Scott Card",
         "editorial": "Ediciones B / Zeta",
@@ -8,7 +8,7 @@
         "img": "img/img1.jpg"
     },
     {
-        "id": "2",
+        "id": "1",
         "titulo": "Juego de tronos",
         "autor": "George R. R. Martin",
         "editorial": "Gigamesh",
@@ -16,7 +16,7 @@
         "img": "img/img2.jpg"
     },
     {
-        "id": "3",
+        "id": "2",
         "titulo": "I robot",
         "autor": "Isaac Asimov",
         "editorial": "Edhasa",

@@ -23,15 +23,18 @@
             <!--Por lo que el books tiene los parametros del arreglo de libros, books.titulo, books.editorial, etc.-->
             <div class="col-md-2">
                 <!-- Grilla de la pagina web ,  tiene 12 elementos en total-->
-                <img class="thumbnail book-img" ng-src="{{book.img}}" alt="">
+                <a ng-click="Products.setBookIndex($index)" ui-sref="{{$index}}">
+                    <img class="thumbnail book-img" ng-src="{{book.img}}" alt="">
+                </a>
             </div>
             <div class="col-md-10">
-                <a ng-click="" ng-href="#">
+                <a ng-click="Products.setBookIndex($index)" ui-sref="{{$index}}">
+                    <!--Acceder al index del elemento del ngrepeat para poder hacer referencia a él con el ui-router-->
                     <h3>{{book.titulo}}</h3>
                 </a>
 
                 <h4>{{book.editorial}}</h4>
-                <p>{{book.descripcion}}</p>
+                <p>{{book.descripcion | limitTo: 115}}...</p>
             </div>
 
         </li>
