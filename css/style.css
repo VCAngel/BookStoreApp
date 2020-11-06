@@ -2,19 +2,18 @@ html{
     font-size: 62.5%; /*!!! Reset para REMS =>> 62.5% de 16px= 10px* !!!*/
 }
 
-.hideBook{
+.hideBook{ /* -> Oculta los libros que no son seleccionados, cuando se da click*/
     display: none !important;
-}
-
-.top-bar{
-    content: '';
-    background-color: blue;
-    min-height: 5rem;
 }
 
 .book-img{
     max-width: 100%; /* -> Las imagenes son responsivas a su contenedor*/
     width: 15rem;
+}
+
+.img-detail{
+    max-width: 100%;
+    width: 25rem;
 }
 
 .list-group-card{
@@ -26,12 +25,21 @@ html{
     border-radius: 0.5rem;
 }
 
+.top-bar{
+    background-color: rgb(35, 35, 35);
+    min-height: 3rem;
+    margin-top: -3rem;
+    min-width: 100%;
+    position: fixed;
+}
+
 .store-header{
     background-image: url(../img/header-bg.jpg);
     background-position: center center;
     background-size: cover;
     height: 1vh;
     min-height: 18rem;
+    margin-top: 3rem;
     margin-bottom: 3rem;
 }
 
@@ -55,4 +63,12 @@ html{
     font-weight: 500;
     color: azure;
     font-size: 3rem;
+}
+
+.footer{
+    background-color: rgb(35, 35, 35);
+    min-height: 5rem;
+    min-width: 100%;
+    margin-top: 5rem;
+    position: fixed;
 }
